@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link href="website.css" rel="stylesheet">
+
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <header>
+        <a href="/" class="logo" id="logo">Sameera Kadiyapu</a>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <!-- <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <br>
+    
+
+    <div class=" container-fluid home" id="home">
+        <div class="row">
+            <div class="intro col-6">
+                <div class="content">
+                    <h1>Hi There,<br/> I'm  <span style="color:#B85042;" id="name">Sai Sameera Kadiyapu</span></h1>
+                    <p>i am into <span >Web development</span></p>
+                    <button class="aboutbtn" style="border-radius:30px;">About me <i class="fas fa-arrow-circle-down"></i></button>
+                     <br><br>
+                 
+                    <div class="socials">
+                        <ul class="social-icons">
+                          <li><a class="linkedin"  id="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/sai-sameera
+                            -kadiyapu-a998a624/
+                            " target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+                          <li><a class="github"id="git" aria-label="GitHub" href="https://github.com/SameeraKadiyapu" target="_blank"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+            </div>
+            <div class=" im col-6">
+                <div class="image">
+                    <img id="img"class="tilt" src="data:image/jpeg;base64,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" alt="">
+                </div>
+
+            </div>
+
+            
+
+        </div>
+    
+        
+        
+    
+    </div>
+    
+    <div class="container-fluid about">
+        <h2 class="heading" style="margin-top:40px;"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+   
+        <div class="row">
+            <h3>I'm <span id="aboutname">Sai Sameera Kadiyapu</span></h3>
+            <span class="tag">Web Developer</span>
+            
+            <p id="bio"> I am a Web Developer based in Andhra Pradesh, India. 
+                I am a Computer Science  undergraduate from SPPU.
+                I am very passionate about improving my coding skills & developing applications & websites.
+                Working for myself to improve my skills.
+                </p>
+            
+            <div class="box-container">
+                
+                <div class="box">
+                  <p><b>email :</b><span id="email">  kadiyapusameera@gmail.com</span></p>
+                  <p><b>place : </b><span id="place">Andrapradesh, India - 533340</p>
+                </div>
+            </div>
+            
+            
+    
+        </div>
+       
+    </div>
+
+
+    <div class="container-fluid skills">
+        <div class="card" style="width: 25rem; height:auto;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1761638528/photo/education-technology-and-ai-artificial-intelligence-concept-women-use-laptops-learn-lessons.webp?b=1&s=170667a&w=0&k=20&c=ZAUfwmwWT1HuPXNJWBWZgJZ3PbA-1hl-4VcYjEon3Ns=" alt="Card image cap">
+
+            <div class="card-body">
+              <h5 class="card-title"> Skills&Abilities</h5>
+              <ul class="card-text"  id="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>BOOTSTRAP</li>
+                <li>REACT JS</li>
+                <li>PYTHON</li>
+                <li>SQL</li>
+                <li>JQUERY</li>
+                
+
+              </ul>
+              
+            </div>
+        </div>
+        <div class="card" style="width: 25rem; height:auto;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29yayUyMGV4cGVyaWVuY2UlMjBvaW1hZ2VzfGVufDB8fDB8fHww0">
+
+
+            <div class="card-body">
+              <h5 class="card-title">Work Experience</h5>
+              <p class="card-text" id="work">Iam working as  an intern in the innovate intern company as  a summer intern under web development domain.</p>
+              
+            </div>
+        </div>
+        <div class="card" style="width: 25rem; height:auto;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1364946137/photo/businessman-holding-and-showing-the-best-quality-assurance-with-golden-five-stars-for.webp?b=1&s=170667a&w=0&k=20&c=4I8ctr_z1np5DiincV1VFlMjwwEyc-wHb_0gWElH6DU=" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Certifications</h5>
+              <ul class="card-text" id="certifications"> 
+                <li>python certification from <b> Scaler</b></li>
+                <li>Css certificate from <b>Hacker Rank</b></li>
+              </ul>
+              
+            </div>
+          </div>
+        
+    </div>
+    <div class="container-fluid education">
+        <div class="row ">
+            <div class="col-6  px-3 ">
+                <h1 style="text-align:center;">My Education</h1>
+                <ul id="education">
+                    <li><b>Bachelor Of Technology |2021-2015-</b>Rajiv Gandhi University Of Knowledge and Technologies :9.0</li>
+                    <li><b>Board of Secondary Education|2019-2021</b>-Rajiv Gandhi University Of Knowledge and Technologies :9.3</li>
+                    <li><b>SSC|2018-2019</b>-ZPP High school,Tapeswaram :10</li>
+                </ul>
+            </div>
+            <div class="col-6 px-5 projects">
+                <h1 style="text-align:center;">My projects</h1>
+                <h5 id="projecttitle">Simple Analyser</h5>
+                <p id="projectdescription">This websie contains an an intutive interface to perform various calculations like cgpa ,fuel ,currency ,EMI,BMI etc.. which are useful for students and in everyones daily life. </p>
+
+                <h5 id="projecttitle">Portfolio Maker</h5>
+                <p id="projectdescription">This Website provides user with an attractive and well defined portfolio website by their information as inputs. </p>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid footer">
+
+        <div class="row ">
+      
+            <div class="col-5 text-center">
+                <h3>Sameera's Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> </p>
+            </div>
+      
+            <div class="col-3 quicklinks ">
+                <h3 class="mx-5">quick links</h3>
+                <ul >
+                    <li><a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a></li>
+                    <li><a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a></li>
+                    <li><a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a></li>
+                    <li><a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a></li>
+                    <li><a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a></li>
+            
+
+                </ul>
+                </div>
+      
+            <div class="col-4 px-5">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-phone"></i>+91 <span id="phone">8179558243</span></p>
+                <p> <i class="fas fa-envelope"></i>kadiyapusameera@gmail.com</p>
+                <p> <i class="fas fa-map-marked-alt"></i>Andhrapradesh, India-533340</p>
+                <div class="social-icons">
+    
+                    <a class="linkedin"  id="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/sai-sameera
+                            -kadiyapu-a998a624/
+                            " target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/SameeraKadiyapu" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                    </div>
+            </div>
+        </div>
+      
+        
+      </section>
+
+    <!-- <script>
+        var submittedFName = localStorage.getItem('submittedFName');
+        var submittedLName = localStorage.getItem('submittedLName');
+        var submittedEmail = localStorage.getItem('submittedEmail');
+        var linkedin = localStorage.getItem('linkedin');
+        var git = localStorage.getItem('git');
+        var bio = localStorage.getItem('bio');
+        var place = localStorage.getItem('place');
+        var skills = localStorage.getItem('skills');
+        var certifications = localStorage.getItem('certifications');
+        var work=localStorage.getItem('work');
+        var education=localStorage.getItem('education');
+        var projectdescription=localStorage.getItem('projectdescription');
+        var projecttitle=localStorage.getItem('projecttitle');
+
+
+
+
+        var profilePicData = localStorage.getItem('profilePic');
+
+        // Display form values
+        document.getElementById('logo').innerHTML = submittedFName;
+
+        document.getElementById('name').innerHTML = submittedFName + " " + submittedLName;
+        document.getElementById('linkedin').href = linkedin;
+        document.getElementById('git').href = git;
+        document.getElementById('bio').innerHTML = bio;
+        document.getElementById('email').innerHTML = submittedEmail ;
+        document.getElementById('logo').innerHTML = submittedFName;
+        document.getElementById('work').innerHTML = work;
+        document.getElementById('aboutname').innerHTML = submittedFName;
+        document.getElementById('place').innerHTML = place;
+        document.getElementById('education').innerHTML = education;
+        document.getElementById('projectdescription').innerHTML = projectdescription;
+        document.getElementById('projecttitle').innerHTML = projecttitle;
+
+
+
+        if (skills) {
+            var skillsArray = JSON.parse(skills);
+            var skillsContainer = document.getElementById('skills');
+            skillsArray.forEach(function(skill) {
+                var skillElement = document.createElement('li');
+                skillElement.innerText = skill;
+                skillsContainer.appendChild(skillElement);
+            });
+        }
+        if (certifications) {
+            var certarray = JSON.parse(certifications);
+            var certContainer = document.getElementById('certifications');
+            certarray.forEach(function(cert) {
+                var certElement = document.createElement('li');
+                certElement.innerText = cert;
+                certContainer.appendChild(certElement);
+            });
+        }
+
+
+        // Display profile picture
+        if (profilePicData) {
+            document.getElementById('img').src = profilePicData;
+        }
+
+        // Optional: Clear local storage after displaying the values
+        localStorage.removeItem('submittedFName');
+        localStorage.removeItem('submittedLName');
+        localStorage.removeItem('submittedEmail');
+        localStorage.removeItem('linkedin');
+        localStorage.removeItem('git');
+        localStorage.removeItem('profilePic');
+    </script> -->
+</body>
+</html>
